@@ -11,7 +11,7 @@ for index,row in services.iterrows():
     f.write('categories: ' + row['カテゴリ'] + '\n')
     f.write('by: \'' + row['運営元団体名'] + '\'\n')
     f.write('service: \'' + row['URL'] + '\'\n')
-    f.write('image-url: \'' + row['URL'] + '\'\n')
+    f.write('image-url: \'' + row['画像URL'] + '\'\n')
     f.write('---\n')
 
     # f.write('#' + row['タイトル（事業名）'] + '\n')
