@@ -10,6 +10,7 @@ for index,row in services.iterrows():
     f.write('layout: post\n')
     f.write('title: \'' + row['タイトル（事業名）'] + '\'\n')
     f.write('target: \'' + row['ターゲット'] + '\'\n')
+    f.write('format: \'' + row['コンテンツ形式'] + '\'\n')
     f.write('description: \'' + row['概要'] + '\'\n')
     f.write('date: ' + row['追加日'] + ' ' +row['追加時間'] + ' +0900\n')
     f.write('categories: ' + row['カテゴリ'] + '\n')
