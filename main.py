@@ -19,6 +19,6 @@ for index,row in services.iterrows():
     f.write('---\n')
 
     # f.write('#' + row['タイトル（事業名）'] + '\n')
-    f.write(row['概要'] + '\n')
+    # f.write(row['概要'] + '\n')
 
     f.close()
