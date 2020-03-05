@@ -7,6 +7,7 @@ date = str(datetime.date.today())
 for index,row in services.iterrows():
     f = open('./markdown/' + date + '-' + row['タイトル（事業名）'] + '.md', 'w', encoding='utf-8')
     f.write('---\n')
+    f.write('layout: post\n')
     f.write('title: \'' + row['タイトル（事業名）'] + '\'\n')
     f.write('description: \'' + row['概要'] + '\'\n')
     f.write('date: ' + row['追加日'] + ' ' +row['追加時間'] + ' +0900\n')
