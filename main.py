@@ -1,9 +1,11 @@
 import pandas as pd
+import datetime
 
 services = pd.read_csv('./services.csv')
+date = str(datetime.date.today())
 
 for index,row in services.iterrows():
-    f = open('./markdown/' + row['タイトル（事業名）'] + '.md', 'w', encoding='utf-8')
+    f = open('./markdown/' + date + '-' + row['タイトル（事業名）'] + '.md', 'w', encoding='utf-8')
     f.write('---\n')
     f.write('title: \'' + row['タイトル（事業名）'] + '\'\n')
     f.write('description: \'' + row['概要'] + '\'\n')
